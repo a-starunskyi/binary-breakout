@@ -1,6 +1,9 @@
 # Ignore Visual Studio Code settings directory
 .vscode/
 
+# Ignore build settings directory
+.build/
+
 # Ignore file types: exe, ilk, obj, pdb
 *.exe
 *.ilk
