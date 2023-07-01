@@ -15,7 +15,7 @@
             "args": [
                 "/EHsc",
                 "/Zi",
-                "main.cpp",
+                "${file}",
                 "/Fo${workspaceFolder}\\build\\${fileBasenameNoExtension}.obj",
                 "/Fd${workspaceFolder}\\build\\${fileBasenameNoExtension}.pdb",
                 "/link",
