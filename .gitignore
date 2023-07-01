@@ -1,5 +1,8 @@
-.vscode,
-*.exe,
-*.ilk,
-*.obj,
+# Ignore Visual Studio Code settings directory
+.vscode/
+
+# Ignore file types: exe, ilk, obj, pdb
+*.exe
+*.ilk
+*.obj
 *.pdb
