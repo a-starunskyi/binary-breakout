@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Ensure build directory",
+            "type": "shell",
+            "command": "if(!(Test-Path -Path ${workspaceFolder}\\build)) { New-Item -ItemType Directory -Path ${workspaceFolder}\\build }",
+            "problemMatcher": []
+        },
+        {
+            "label": "build",
+            "dependsOn": "Ensure build directory",
+            "type": "shell",
+            "command": "cl",
+            "args": [
+                "/EHsc",
+                "/Zi",
+                "main.cpp",
+                "/Fo${workspaceFolder}\\build\\${fileBasenameNoExtension}.obj",
+                "/Fd${workspaceFolder}\\build\\${fileBasenameNoExtension}.pdb",
+                "/link",
+                "/OUT:${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
