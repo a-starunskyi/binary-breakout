@@ -4,7 +4,7 @@
 # Ignore build settings directory
 .build/
 
-# Ignore Visual Studio settings directory
+# Ignore Visual Studio settings
 .vs/
 
 # Ignore file types: exe, ilk, obj, pdb
@@ -12,3 +12,4 @@
 *.ilk
 *.obj
 *.pdb
+*.user
