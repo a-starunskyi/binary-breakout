@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson2\task6_bonus\main.cpp(11,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson2\task6_bonus\main.cpp(23,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  task6_bonus.vcxproj -> C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson2\x64\Debug\task6_bonus.exe

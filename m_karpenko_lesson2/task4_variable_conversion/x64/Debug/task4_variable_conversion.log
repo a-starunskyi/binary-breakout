@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson2\task4_variable_conversion\main.cpp(25,14): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson2\task4_variable_conversion\main.cpp(34,24): warning C4244: 'initializing': conversion from 'long' to 'short', possible loss of data
+  task4_variable_conversion.vcxproj -> C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson2\x64\Debug\task4_variable_conversion.exe

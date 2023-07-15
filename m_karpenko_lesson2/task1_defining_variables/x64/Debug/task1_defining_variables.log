@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson2\task1_defining_variables\main.cpp(12,10): warning C4101: 'YoN': unreferenced local variable
+  task1_defining_variables.vcxproj -> C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson2\x64\Debug\task1_defining_variables.exe

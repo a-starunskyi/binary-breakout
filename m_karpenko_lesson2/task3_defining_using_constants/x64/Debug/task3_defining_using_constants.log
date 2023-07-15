@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson2\task3_defining_using_constants\main.cpp(12,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson2\task3_defining_using_constants\main.cpp(24,36): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  task3_defining_using_constants.vcxproj -> C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson2\x64\Debug\task3_defining_using_constants.exe
