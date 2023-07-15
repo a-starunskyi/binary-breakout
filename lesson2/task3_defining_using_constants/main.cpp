@@ -6,13 +6,12 @@
 using namespace std;
 
 int main() {
-    // TODO: Define the constant PI
-
-    // TODO: Prompt user for radius
-
-    // TODO: Calculate area
-
-    // TODO: Print area
+    const double Pi = 3.14159;
+    double radius, area
+        cout << "Input radius: ";
+    cin >> radius;
+    area = Pi * radius * radius;
+    cout << "\nArea of the circle: ";
 
     return 0;
 }

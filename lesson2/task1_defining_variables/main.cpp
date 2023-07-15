@@ -5,11 +5,18 @@
 using namespace std;
 
 int main() {
-    // TODO: Define variables
 
-    // TODO: Assign values
+    int a0 = 100;
+    char a1 = 'a';
+    bool Boolean = true;
+    float a2 = 1.1;
+    double a3 = 3.000000000000000004;
 
     // TODO: Print variables
-
+    printf("Int = ", a0);
+    printf("Char = ", a1);
+    printf("Bool = ", Boolean);
+    printf("Float = ", a2);
+    printf("Double = ", a3);
     return 0;
 }

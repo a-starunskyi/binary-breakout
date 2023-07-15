@@ -6,11 +6,15 @@
 using namespace std;
 
 int main() {
+    constexpr double Pi() { 22.0 / 7 };
+    int rad;
+    float sphereVol;
     // TODO: Prompt user for radius
-
+    cout << "Input radius of a sphere = ";
+    cin >> rad;
     // TODO: Calculate volume
-
+    sphereVol = (4 * Pi() * rad * rad * rad) / 3;
     // TODO: Print volume
-
+    cout << "Volume of your sphere = " << sphereVol;
     return 0;
 }
