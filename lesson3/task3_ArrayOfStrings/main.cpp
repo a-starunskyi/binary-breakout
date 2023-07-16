@@ -2,9 +2,10 @@
 #include <string>
 
 int main() {
-    // TODO:
-    // 1. Declare an array of strings with values "Apple", "Banana", "Cherry"
-    // 2. Print the first string from the array (remember, array indexing starts from 0)
+    std::string fruits[3] = { "banana", "apple","cherry" };
+    std::cout << fruits[0] << std::endl;
+    //Print the first string from the array
 
     return 0;
 }
+//thats it

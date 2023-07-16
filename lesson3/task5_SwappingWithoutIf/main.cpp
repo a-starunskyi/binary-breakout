@@ -1,10 +1,19 @@
 #include <iostream>
 
 int main() {
-    // TODO:
-    // 1. Declare an integer array of size 2 with the values 5 and 10
-    // 2. Swap the values of the two elements using a temporary variable
-    // 3. Print the result
+    // we just need to swap this shit yea
+    //that will be easy
+    int someVariable[2] = { 5, 10 };
+
+    //SO first we create new var, then set it to 5
+    //then 5 becomes 10
+    //hen 10 becomes that new var that we created at the start
+    int someUsefulVariable = someVariable[0];
+    someVariable[0] = someVariable[1];
+    someVariable[1] = someUsefulVariable;
+
+    std::cout << "Swapped that bad boy: [" << someVariable[0] << ", " << someVariable[1] << "]" << std::endl;
 
     return 0;
 }
+//damnnn that was not easy D:
