@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\Pocitac\Documents\GitHub\binary-breakout\lesson2\task6_bonus\main.cpp(8,18): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Pocitac\Documents\GitHub\binary-breakout\lesson2\task6_bonus\main.cpp(14,5): error C2146: syntax error: missing ';' before identifier 'cout'
+C:\Users\Pocitac\Documents\GitHub\binary-breakout\lesson2\task6_bonus\main.cpp(19,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data

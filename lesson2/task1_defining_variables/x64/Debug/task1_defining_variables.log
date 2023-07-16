@@ -1,2 +1,3 @@
 ﻿  main.cpp
-  task1_defining_variables.vcxproj -> D:\binary-breakout\lesson2\x64\Debug\task1_defining_variables.exe
+C:\Users\Pocitac\Documents\GitHub\binary-breakout\lesson2\task1_defining_variables\main.cpp(15,27): warning C4305: 'initializing': truncation from 'double' to 'float'
+  task1_defining_variables.vcxproj -> C:\Users\Pocitac\Documents\GitHub\binary-breakout\lesson2\x64\Debug\task1_defining_variables.exe

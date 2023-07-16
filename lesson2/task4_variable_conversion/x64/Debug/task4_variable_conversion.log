@@ -1,0 +1,7 @@
+﻿  main.cpp
+C:\Users\Pocitac\Documents\GitHub\binary-breakout\lesson2\task4_variable_conversion\main.cpp(9,22): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Pocitac\Documents\GitHub\binary-breakout\lesson2\task4_variable_conversion\main.cpp(15,23): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Pocitac\Documents\GitHub\binary-breakout\lesson2\task4_variable_conversion\main.cpp(16,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Pocitac\Documents\GitHub\binary-breakout\lesson2\task4_variable_conversion\main.cpp(22,23): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Pocitac\Documents\GitHub\binary-breakout\lesson2\task4_variable_conversion\main.cpp(23,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  task4_variable_conversion.vcxproj -> C:\Users\Pocitac\Documents\GitHub\binary-breakout\lesson2\x64\Debug\task4_variable_conversion.exe

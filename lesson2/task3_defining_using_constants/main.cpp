@@ -5,14 +5,24 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    // TODO: Define the constant PI
+const float pi = 22.0 / 7;
 
-    // TODO: Prompt user for radius
+float calculateCircleArea(float radius) {
+    return pi * radius * radius;
+}
 
-    // TODO: Calculate area
+int main(float radius) {
+    cout << "Enter area of circle: ";
+    cin >> radius;
 
-    // TODO: Print area
+    float area = calculateCircleArea(radius);
+
+    cout << "The area of the circle is: " << area << endl;
+
+    
 
     return 0;
 }
+// i dont know how it works but it works 
+// i dont understand how i write this 
+// and i think that something wrong

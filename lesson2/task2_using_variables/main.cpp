@@ -6,11 +6,17 @@
 using namespace std;
 
 int main() {
-    // TODO: Prompt user for length and width
+    int width, length;
 
-    // TODO: Calculate area
+    cout << "Enter lenght of Rectangle: ";
+    cin >> length;
 
-    // TODO: Print area
+    cout << "Enter width of Rectangle: ";
+    cin >> width;
+
+    int rectangle = length * width;
+
+    cout << "The Rectangle is: " << rectangle << endl;
 
     return 0;
 }
