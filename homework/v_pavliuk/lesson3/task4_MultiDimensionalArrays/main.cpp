@@ -1,9 +1,15 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
     // TODO:
     // 1. Declare and initialize a 2x2 integer array with the values 1, 2, 3, 4
     // 2. Print the element at row 1 and column 2 (remember, array indexing starts from 0)
+
+     int array[2][2] = { {1, 2}, {3, 4} };
+
+     cout << "Print element at 1 row and 2 column: " << array[0][1] << endl;
 
     return 0;
 }
