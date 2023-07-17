@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson4\task9_sizeofOperator\main.cpp(12,22): warning C4305: 'initializing': truncation from '__int64' to 'long'
+C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson4\task9_sizeofOperator\main.cpp(12,24): warning C4309: 'initializing': truncation of constant value
+C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson4\task9_sizeofOperator\main.cpp(14,18): warning C4305: 'initializing': truncation from 'double' to 'float'
+  task9_sizeofOperator.vcxproj -> C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson4\x64\Debug\task9_sizeofOperator.exe
