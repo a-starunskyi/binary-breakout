@@ -3,10 +3,17 @@
 #include <iostream>
 
 int main() {
-    // TODO:
-    // 1. Declare an integer variable
-    // 2. Use both prefix and postfix increment (++) and decrement (--) operators on this variable
-    // 3. Print the variable's value after each operation
+  
+    int a = 3;
+    ++a;
+    cout << "++a =" << a;
+    a++;
+    cout << "a++ =" << a;
+    --a;
+    cout << "--a =" << a;
+    a--;
+    cout << "a-- =" << a;
+
 
     return 0;
 }

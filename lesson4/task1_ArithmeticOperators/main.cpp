@@ -3,11 +3,18 @@
 #include <iostream>
 
 int main() {
-    // TODO:
-    // 1. Declare three integer variables a, b, and c and initialize them with any values
-    // 2. Use arithmetic operators +, -, *, /, % to perform operations on these variables
-    // 3. Print out the result after each operation
-    // 4. Don't forget to handle the situation where the denominator might be zero in a division operation
-
+    int a = 10;
+    int b = 10;
+    int c = 10;
+    int addition = a + b + c;
+    cout << "a + b + c = " << addition;
+    int subtraction = a - b - c;
+    cout << "a - b - c =" << subtraction;
+    int multiply = a * b * c;
+    cout << "a * b * c =" << multiply;
+    int divide = a / b / c;
+    cout << "a / b / c =" << divide;
+    int modulo = a % b % c;
+    cout << "a % b % c =" << modulo;
     return 0;
 }

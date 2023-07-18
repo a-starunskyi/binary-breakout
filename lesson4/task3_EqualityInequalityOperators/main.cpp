@@ -3,10 +3,17 @@
 #include <iostream>
 
 int main() {
-    // TODO:
-    // 1. Ask the user to input two integers
-    // 2. Use equality (==) and inequality (!=) operators to compare these integers
-    // 3. Print out whether these integers are equal or not
+    int a = 0;
+    int b = 0;
+    cout << "Input value for integer a = ";
+    cin >> a;
+    cout << "Input value for Integer b";
+    cin >> b;
+    bool equality = (a == b);
+    bool inequality = (a != b);
+    cout << "Integer a is equal to integer b" << equality;
+    cout << "Integer a is inequal to integer b" << inequality;
+   
 
     return 0;
 }

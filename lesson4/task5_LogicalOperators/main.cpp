@@ -3,10 +3,15 @@
 #include <iostream>
 
 int main() {
-    // TODO:
-    // 1. Ask the user to input two Boolean values (0 or 1)
-    // 2. Use logical operators (!, &&, ||) to manipulate these Boolean values
-    // 3. Print out the results
+    bool a = false;
+    bool b = false;
+    cout << "Input true or false for bool a = ";
+    cin >> a;
+    cout << "Input true or false for bool b = ";
+    cin >> b;
+    cout << a << " NOT " << b; << " = " << (!a!b);
+    cout << a << " AND " << b << " = " << (a && b);
+    cout << a << " OR " << b << " = " << (a || b);
 
     return 0;
 }

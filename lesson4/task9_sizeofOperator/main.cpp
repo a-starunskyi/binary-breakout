@@ -3,9 +3,11 @@
 #include <iostream>
 
 int main() {
-    // TODO:
-    // 1. Use the sizeof operator to determine the memory occupied by different data types
-    // 2. Print out the results
-
+    cout << "Bytes used by int = " << sizeof(int);
+    cout << "Bytes used by float = " << sizeof(float);
+    cout << "Bytes used by char = " << sizeof(char);
+    cout << "Bytes used by double = " << sizeof(double);
+    cout << "Bytes used by long = " << sizeof(long);
+    cout << "Bytes used by unsigned int" << sizeof(unsigned int);
     return 0;
 }

@@ -3,11 +3,16 @@
 #include <iostream>
 
 int main() {
-    // TODO:
-    // 1. Ask the user to input an integer
-    // 2. Use bitwise shift operators (>>, <<) to shift the bits of this integer
-    // 3. Print out the results of these operations
-    // 4. Remember to write comments explaining what your program does
-
+    // Declaring and initializing a variable
+    int a = 0;
+    cout << "Input the value of the integer A";
+    cin >> a;
+    //Shifting the bit sequence to the right one bit, essentially halving the number
+    int shiftOneR = a >> 1;
+    //Shifting a bit to the left, doubling the number
+    int shiftOneL = a << 1;
+    cout << "Half of your value =" << shiftOneR;
+    cout << "Double your value =" << shiftOneL;
+ 
     return 0;
 }
