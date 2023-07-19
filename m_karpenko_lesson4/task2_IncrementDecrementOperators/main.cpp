@@ -24,6 +24,9 @@ int main()
     cout << num << endl;
     --num;
     cout << num << endl;
+
+    cout << num++ << endl;
+    cout << ++num << endl;
     // 3. Print the variable's value after each operation
 
     return 0;

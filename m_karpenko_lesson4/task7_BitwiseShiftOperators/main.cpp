@@ -26,6 +26,6 @@ int main() {
     cout << "Quadruple: " << quadrupleNum << endl;
     
     // 4. Remember to write comments explaining what your program does
-
+    //  When i bit shifting is executed, the number in memory is shifted one bit, depending on which way the operation tells it to do so.
     return 0;
 }

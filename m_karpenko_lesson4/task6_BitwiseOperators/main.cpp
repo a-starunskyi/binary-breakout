@@ -29,10 +29,10 @@ int main()
 
     // 3. Print out the results of these operations
 
-    cout << bitwiseNOT << endl;
-    cout << bitwiseAND << endl;
-    cout << bitwiseOR << endl;
-    cout << bitwiseXOR << endl;
+    cout << "Bitwice operation ~ " << bitwiseNOT << endl;
+    cout << "Bitwice operation & " << bitwiseAND << endl;
+    cout << "Bitwice operation | " << bitwiseOR << endl;
+    cout << "Bitwice operation ^ " << bitwiseXOR << endl;
 
     return 0;
 }

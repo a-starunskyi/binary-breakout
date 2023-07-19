@@ -28,22 +28,17 @@ int main()
     
     // 2. Use relational operators to determine the largest and smallest numbers among the inputs
     
-    if (firstNum > secondNum && threeNum)
-    {
-        cout << "First number is largest then other";
-    }
-    else if (secondNum > firstNum && threeNum)
-    {
-        cout << "Second number is largest then other";
-    }
-    else if (threeNum > firstNum && firstNum)
-    {
-        cout << "Third number is largest then other";
-    }
-    else if (firstNum == secondNum && threeNum)
-    {
-        cout << "Number are equal";
-    }
+    bool isGreaterThanF = (firstNum > secondNum && firstNum > threeNum);
+    cout << "Result of " << firstNum << " > " << secondNum << "and" << threeNum;
+    cout << " test: " << isGreaterThanF << endl;
+
+    bool isGreaterThanS = (secondNum > firstNum && secondNum > threeNum);
+    cout << "Result of " << secondNum << " > " << firstNum << "and" << threeNum;
+    cout << " test: " << isGreaterThanS << endl;
+
+    bool isGreaterThanT = (threeNum > firstNum && threeNum > secondNum);
+    cout << "Result of " << threeNum << " > " << firstNum << "and" << secondNum;
+    cout << " test: " << isGreaterThanT << endl;
 
     // 3. Print out these values
 
