@@ -16,10 +16,12 @@ int main() {
     cout << "c = " << c;
     cout << "Performing the first operation: \n";
     int opOne = a * b + c;
-        cout << a << " * " << b << " + " << c << " = " << opOne;
+    cout << a << " * " << b << " + " << c << " = " << opOne;
+    if (c != 0) {
         cout << "Performing the second operation: \n";
         double opTwo = b / c - a;
-    cout << b << " / " << c << " - " << a << " = " << opTwo;
+        cout << b << " / " << c << " - " << a << " = " << opTwo;
+    }
     cout << "Performing the third operation: \n";
     int opThree = c * a % b;
     cout << c << " * " << a << " % " << b << " = " << opThree;

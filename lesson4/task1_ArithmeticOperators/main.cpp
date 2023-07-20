@@ -12,8 +12,10 @@ int main() {
     cout << "a - b - c =" << subtraction;
     int multiply = a * b * c;
     cout << "a * b * c =" << multiply;
-    int divide = a / b / c;
-    cout << "a / b / c =" << divide;
+    if (b != 0 && c != 0) {
+        int divide = a / b / c;
+        cout << "a / b / c =" << divide;
+    }
     int modulo = a % b % c;
     cout << "a % b % c =" << modulo;
     return 0;

@@ -9,7 +9,9 @@ int main() {
     cin >> a;
     cout << "Input true or false for bool b = ";
     cin >> b;
-    cout << a << " NOT " << b; << " = " << (!a!b);
+    cout << a << " NOT " << b << " = ";
+    cout << !a;
+    cout << !b;
     cout << a << " AND " << b << " = " << (a && b);
     cout << a << " OR " << b << " = " << (a || b);
 
