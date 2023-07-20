@@ -1,2 +1,4 @@
 ﻿  main.cpp
-  task1_defining_variables.vcxproj -> D:\binary-breakout\lesson2\x64\Debug\task1_defining_variables.exe
+E:\GitHub\binary-breakout\lesson2\task1_defining_variables\main.cpp(10,17): warning C4305: 'initializing': truncation from 'int' to 'char'
+E:\GitHub\binary-breakout\lesson2\task1_defining_variables\main.cpp(10,19): warning C4309: 'initializing': truncation of constant value
+  task1_defining_variables.vcxproj -> E:\GitHub\binary-breakout\lesson2\x64\Debug\task1_defining_variables.exe

@@ -1,0 +1,3 @@
+﻿  main.cpp
+E:\GitHub\binary-breakout\lesson2\task3_defining_using_constants\main.cpp(11,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+  task3_defining_using_constants.vcxproj -> E:\GitHub\binary-breakout\lesson2\x64\Debug\task3_defining_using_constants.exe

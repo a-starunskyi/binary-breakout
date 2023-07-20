@@ -1,0 +1,5 @@
+﻿  main.cpp
+E:\GitHub\binary-breakout\lesson2\task4_variable_conversion\main.cpp(10,22): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+E:\GitHub\binary-breakout\lesson2\task4_variable_conversion\main.cpp(21,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+E:\GitHub\binary-breakout\lesson2\task4_variable_conversion\main.cpp(22,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  task4_variable_conversion.vcxproj -> E:\GitHub\binary-breakout\lesson2\x64\Debug\task4_variable_conversion.exe
