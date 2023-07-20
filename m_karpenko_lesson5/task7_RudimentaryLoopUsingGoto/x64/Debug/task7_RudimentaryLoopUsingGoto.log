@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson5\task7_RudimentaryLoopUsingGoto\main.cpp(8,7): warning C4101: 'rep': unreferenced local variable
+  task7_RudimentaryLoopUsingGoto.vcxproj -> C:\Users\Admin\Desktop\BinaryBreakout\m_karpenko_lesson5\x64\Debug\task7_RudimentaryLoopUsingGoto.exe
