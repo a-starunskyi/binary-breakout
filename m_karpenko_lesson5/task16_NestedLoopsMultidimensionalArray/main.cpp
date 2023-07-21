@@ -14,10 +14,10 @@ int main()
 		for (int j = 0; j < 2; j++)
 		{
 			sum += arr[i][j];
-			cout << sum << endl;
 		}
 	}
-	
+
+	cout << sum << endl;
 	// TODO: Implement nested loops to sum and display the sum of all elements of the array
 
 	return 0;

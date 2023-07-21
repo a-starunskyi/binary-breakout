@@ -6,16 +6,23 @@ using namespace std;
 
 int main() {
 	int n = 0;
+	int sum = 0;
 
-	while (true)
+	while (n<=100)
 	{
-		if (n <= 10)
+		if (n % 3 == 0)
 		{
-			cout << n << endl;
 			n++;
 			continue;
 		}
-		else
+
+		cout << n << endl;
+
+		sum += n;
+		n++;
+
+
+		if (sum>=1000)
 		{
 			break;
 		}

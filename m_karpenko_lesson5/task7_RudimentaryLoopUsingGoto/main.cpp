@@ -5,7 +5,6 @@ using namespace std;
 
 int main() {
 	int num = 10;
-	char rep;
 
 Start:
 	

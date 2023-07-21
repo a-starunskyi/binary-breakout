@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	int day;
+    int day = 0;
 
 	// TODO: Take input from the user
 

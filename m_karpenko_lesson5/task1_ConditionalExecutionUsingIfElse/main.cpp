@@ -7,7 +7,8 @@ using namespace std;
 int main() 
 {
 
-	int num1, num2;
+	int num1 = 0;
+	int num2 = 0;
 
 	cout << "Input two number" << endl;
 
@@ -22,9 +23,13 @@ int main()
 	{
 		cout << "Number one: " << num1 << " greather then: " << num2 << endl;
 	}
-	else
+	else if (num2 > num1)
 	{
 		cout << "Number two: " << num2 << " greather then: " << num1 << endl;
+	}
+	else
+	{
+		cout << "Numbers equal " << endl;
 	}
 	return 0;
 }

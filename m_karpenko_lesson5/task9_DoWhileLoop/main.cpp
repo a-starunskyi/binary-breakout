@@ -8,10 +8,10 @@ int main() {
 
 	cout << "Input number: " << endl;
 
-	while (n != 0)
+	do
 	{
 		cin >> n;
-	}
+	} while (n != 0);
 	// TODO: Implement a do...while loop to take numbers from user until zero is entered
 
 	return 0;

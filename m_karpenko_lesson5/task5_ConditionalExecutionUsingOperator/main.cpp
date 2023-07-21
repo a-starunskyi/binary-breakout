@@ -4,12 +4,12 @@
 using namespace std;
 
 int main() {
-	int num;
+	int num = 0;
 
 	// TODO: Take input from the user
 	cin >> num;
 
-	string odd = (num%2==0) ? "Even" : "Odd";
+	string odd = (num % 2 == 0) ? "Even" : "Odd";
 	cout << "This number is:  " << odd  << endl;
 
 	// TODO: Implement the ?: operator to determine and display if it's even or odd

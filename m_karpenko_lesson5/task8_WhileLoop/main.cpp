@@ -3,22 +3,21 @@
 #include<iostream>
 using namespace std;
 
-int main() {
-	int num;
-	int i = 1;
-	long int fаctorial = 1;
+int main()
+{
 
-	cin >> num;
+    int number = 0;
+    int factorialNumber = 1;
 
-	while(i<num)
-	{
-		fаctorial *= i;
-		cout << fаctorial << endl;
-		i++;
-	}
-	// TODO: Take input from the user
+    cout << "Enter number: ";
+    cin >> number; 
 
-	// TODO: Implement a while loop to calculate and display the factorial of the number
+    for (int i = 1; i < number + 1; i++) 
+    { 
+        factorialNumber = factorialNumber * i;
+        cout << factorialNumber << endl;
+    }
 
-	return 0;
+
+    return 0;
 }

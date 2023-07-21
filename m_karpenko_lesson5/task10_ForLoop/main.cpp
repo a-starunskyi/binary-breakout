@@ -4,8 +4,7 @@
 using namespace std;
 
 int main() {
-	int n;
-	int num = 0;
+	int n = 0;
 	int sum = 0;
 
 	cout << "Input number: " << endl;
@@ -18,11 +17,10 @@ int main() {
 
 	for (int i = 0; i < n; i++)
 	{
-		sum += num;
-		cout << "Sum of number = " << sum << endl;
+		sum += i;
 
-		num++;
 	}
 
+	cout << "Sum of number = " << sum << endl;
 	return 0;
 }
