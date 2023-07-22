@@ -10,18 +10,18 @@ int main() {
     cout << "This program will help you calculate the area of a rectangle" << endl;
 
     cout << "Enter the length of your rectandle: " ;
-    int RectangleLength = 0;
-    cin >> RectangleLength ;
+    int rectangleLength = 0;
+    cin >> rectangleLength ;
 
     cout << "Enter the width of your rectangle: " ;
-    int RectangleWidth = 0;
-    cin >> RectangleWidth;
+    int rectangleWidth = 0;
+    cin >> rectangleWidth;
 
     // TODO: Calculate area
-    int result = RectangleLength * RectangleWidth;
+    int result = rectangleLength * rectangleWidth;
 
     // TODO: Print area
-    cout << RectangleLength << "X" << RectangleWidth;
+    cout << rectangleLength << "X" << rectangleWidth;
     cout << " = " << result << endl;
 
     return 0;

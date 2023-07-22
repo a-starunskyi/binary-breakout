@@ -13,9 +13,11 @@ int main() {
 
 
     // TODO: Provide code sample
-    cout << "Code sample:" << endl;
-    cout << "constexpr int myConstexpr = 10;" << endl;
-    cout << "const int myConstant = 42;" << endl; 
+    constexpr float firstValue { 3.5 + 2.5 };
+    const int secondValue = 6;
+
+    cout << "Constexpr return  value: " << firstValue << endl;
+    cout << "Const value: " << secondValue << endl;
 
     return 0;
 }

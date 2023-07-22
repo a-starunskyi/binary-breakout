@@ -6,25 +6,25 @@ using namespace std;
 
 int main() {
     // TODO: Demonstrate implicit conversion
-    int IntValue = 98;
-    float FloatValue = IntValue;
-    double DoubleValue = FloatValue;
+    int intValue = 98;
+    float floatValue = intValue;
+    double doubleValue = floatValue;
 
     cout << "Implicit conversion" << endl;
-    cout << "int value: " << IntValue << endl;
-    cout << "Conversion from int value to float value: " << FloatValue << endl;
-    cout << "Conversion from float value to double value: " << DoubleValue << endl;
+    cout << "int value: " << intValue << endl;
+    cout << "Conversion from int value to float value: " << floatValue << endl;
+    cout << "Conversion from float value to double value: " << doubleValue << endl;
 
     // TODO: Demonstrate explicit conversion
     
-    double ExDoubleValue = 8.1656474407846;
-    float ExFloatValue = ExDoubleValue;
-    int ExIntValue = ExFloatValue;
+    double exDoubleValue = 8.1656474407846;
+    float exFloatValue = exDoubleValue;
+    int exIntValue = exFloatValue;
 
     cout << "Explicit conversion" << endl;
-    cout << "double value: " << ExDoubleValue << endl;
-    cout << "Conversion from double value to float value: " << ExFloatValue << endl;
-    cout << "Conversion from float value to int value: " << ExIntValue << endl;
+    cout << "double value: " << exDoubleValue << endl;
+    cout << "Conversion from double value to float value: " << exFloatValue << endl;
+    cout << "Conversion from float value to int value: " << exIntValue << endl;
 
   
     return 0;
