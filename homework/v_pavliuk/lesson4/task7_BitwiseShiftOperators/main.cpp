@@ -12,7 +12,7 @@ int main()
         // 3. Print out the results of these operations
         // 4. Remember to write comments explaining what your program does
 
-    int num;
+    int num = 0;
     
     cout << "Enter an integer: ";
     cin >> num;

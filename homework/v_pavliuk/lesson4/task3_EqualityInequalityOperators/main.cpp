@@ -10,7 +10,8 @@ int main() {
     // 2. Use equality (==) and inequality (!=) operators to compare these integers
     // 3. Print out whether these integers are equal or not
 
-    int num1, num2;
+    int num1 = 0;
+    int num2 = 0;
 
     cout << "Enter the first integer: ";
     cin >> num1;
