@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\bodia\Documents\GitHub\binary-breakout\lesson4\task5_LogicalOperators\main.cpp(17,11): warning C4552: '!=': result of expression not used
+  task5_LogicalOperators.vcxproj -> C:\Users\bodia\Documents\GitHub\binary-breakout\lesson4\x64\Debug\task5_LogicalOperators.exe
