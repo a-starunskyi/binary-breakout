@@ -1,0 +1,1 @@
+// Problem 7: Write a program that dynamically allocates an integer and assigns a value to it.
