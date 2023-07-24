@@ -1,0 +1,1 @@
+// Problem 2: Write a program that declares an integer pointer and a float pointer.

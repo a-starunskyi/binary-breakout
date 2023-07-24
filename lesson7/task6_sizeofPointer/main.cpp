@@ -1,0 +1,1 @@
+// Problem 6: Write a program that declares a pointer and prints its size using the sizeof() function.

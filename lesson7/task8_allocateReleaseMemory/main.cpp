@@ -1,0 +1,1 @@
+// Problem 8: Write a program that dynamically allocates an integer array, assigns values to it and then deletes it.
