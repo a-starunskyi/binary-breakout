@@ -6,7 +6,20 @@ using namespace std;
 
 // TODO: Declare and define the function that asks the user's name and greets the user
 
-int main() {
+void helloUser();
+
+int main() 
+{
+	helloUser();
 	// TODO: Call the function
 	return 0;
+}
+
+void helloUser()
+{
+	string name;
+	cout << "Please enter your name: ";
+	cin >> name;
+
+	cout << "Hello, " << name << endl;
 }

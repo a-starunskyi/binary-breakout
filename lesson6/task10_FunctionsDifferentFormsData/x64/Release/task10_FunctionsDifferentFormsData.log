@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\Users\Admin\Desktop\BinaryBreakout\lesson6\task10_FunctionsDifferentFormsData\main.cpp(29,13): warning C4244: 'initializing': conversion from 'wint_t' to 'char', possible loss of data
+  Generating code
+  78 of 113 functions (69.0%) were compiled, the rest were copied from previous compilation.
+    39 functions were new in current compilation
+    8 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  task10_FunctionsDifferentFormsData.vcxproj -> C:\Users\Admin\Desktop\BinaryBreakout\lesson6\x64\Release\task10_FunctionsDifferentFormsData.exe

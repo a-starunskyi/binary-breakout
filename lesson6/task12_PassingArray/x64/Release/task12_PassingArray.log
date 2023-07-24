@@ -1,0 +1,6 @@
+﻿  main.cpp
+main.obj : error LNK2001: unresolved external symbol "int __cdecl arrSum(void)" (?arrSum@@YAHXZ)
+    Hint on symbols that are defined and could potentially match:
+      "int __cdecl arrSum(int * const,int)" (?arrSum@@YAHQEAHH@Z)
+C:\Users\Admin\Desktop\BinaryBreakout\lesson6\x64\Release\task12_PassingArray.exe : fatal error LNK1120: 1 unresolved externals
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1127,5): error MSB6006: "link.exe" exited with code 1120.

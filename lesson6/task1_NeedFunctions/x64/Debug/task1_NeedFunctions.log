@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\Admin\Desktop\BinaryBreakout\lesson6\task1_NeedFunctions\main.cpp(11,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Admin\Desktop\BinaryBreakout\lesson6\task1_NeedFunctions\main.cpp(24,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  task1_NeedFunctions.vcxproj -> C:\Users\Admin\Desktop\BinaryBreakout\lesson6\x64\Debug\task1_NeedFunctions.exe
