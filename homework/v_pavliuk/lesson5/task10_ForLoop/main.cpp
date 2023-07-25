@@ -5,14 +5,22 @@
 using namespace std;
 
 int main() {
-	// TODO: Take input from the user
+	// TODO:Take input from the user
 
 	// TODO:Implement a for loop to calculate and display the sum of numbers from 1 to n
+	
+	int result = 0;
+	int n = 0;
+	cout << "Enter a number: ";
+	cin >> n;
 
-	for (int n = 1; n < 10; n++)
+
+	for (int i = 1; i <= n; i++)
 	{
-		cout << n << endl;
+		result += i;
 	}
+
+	cout << "The sum of numbers from 1 to " << n << " is " << result;
 
 	return 0;
 }

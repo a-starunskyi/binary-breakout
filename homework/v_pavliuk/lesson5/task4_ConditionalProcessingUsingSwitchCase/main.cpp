@@ -8,13 +8,24 @@ int main() {
 	// TODO: Take input from the user
 
 	// TODO: Implement the switch-case logic to display appropriate messages.
-	
-	
-	int day;
-	cout << "Enter the day of the week: ";
-	cin >> day;
 
-	switch (day)
+	enum DaysOfWeek
+	{
+		Sunday = 0,
+		Monday,
+		Tuesday,
+		Wednesday,
+		Thursday,
+		Friday,
+		Saturday
+	};
+
+
+	int dayInput;
+	cout << "Enter a number for a day (Sunday = 0): ";
+	cin >> dayInput;
+
+	switch (dayInput)
 	{
 		case 1:
 			cout << "Monday - the first day of the week";

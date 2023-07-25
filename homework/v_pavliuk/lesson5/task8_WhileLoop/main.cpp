@@ -9,26 +9,23 @@ int main() {
     // TODO: Implement a while loop to calculate and display the factorial of the number
 
     int number;
-    cout << "Enter a number: ";
+    cout << "Enter a positive integer: ";
     cin >> number;
 
-    
-    if (number < 0) 
-    {
+    if (number < 0) {
         cout << "Factorial is not defined for negative numbers." << endl;
-        return 0;
+        return 1;
     }
 
     int factorial = 1;
     int i = 1;
 
-    while (i <= number) 
-    {
+    while (i <= number) {
         factorial *= i;
         i++;
     }
 
-    cout << "The factorial of " << number << " is: " << factorial << endl;
+    cout << "Factorial of " << number << " is: " << factorial << endl;
 
     return 0;
 }
