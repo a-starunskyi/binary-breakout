@@ -5,10 +5,8 @@ using namespace std;
 
 int main() {
 	int num;
-
-	// TODO: Take input from the user
-
-	// TODO: Implement the ?: operator to determine and display if it's even or odd
-
+	cout << "Input the value for the number: "
+	cin >> num;
+	(num % 2 == 0) ? cout << "The number is even." : cout << "The number is odd.";
 	return 0;
 }

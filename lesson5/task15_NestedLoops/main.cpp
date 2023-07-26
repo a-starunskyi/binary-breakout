@@ -4,8 +4,14 @@
 using namespace std;
 
 int main() {
+	for (int i = 1; i <= 10; i++) {
+		cout << "Multiplication table of " << i << ":" << endl;
+		for (int j = 1; j <= 10; j++) {
+			cout << i << " * " << j << " = " << i * j << endl;
+		}
+		cout << endl; // adding a blank line after each multiplication table
 
-	// TODO: Implement nested loops to display the multiplication table from 1 to 10
+	}
 
 	return 0;
 }

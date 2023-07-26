@@ -4,8 +4,22 @@
 using namespace std;
 
 int main() {
+	int count = 0;
+	while (true) {
+		int number;
 
-	// TODO: Implement an infinite loop that keeps taking numbers from the user until a negative number is entered or 100 inputs are taken
+		cout << "Input a number (enter a negative number to stop): ";
+		cin >> number;
+
+		if (number < 0 || count == 100) {
+			break;
+		}
+
+		cout << "Your input: " << number;
+
+		count++;
+
+	}
 
 	return 0;
 }

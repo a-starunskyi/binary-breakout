@@ -6,7 +6,16 @@ using namespace std;
 
 int main() {
 
-	// TODO: Implement a loop with 'continue' and 'break' to perform the specified task
-
+	int sum = 0;
+	for (int i = 1; i <= 100; i++) {
+		if (i % 3 == 0) {
+			continue;
+		}
+		if (sum + i > 1000) {
+			break;
+		}
+		sum += i;
+	}
+	cout << "The sum of numbers from 1-100, excluding divisible by 3, is: " << sum;
 	return 0;
 }

@@ -5,10 +5,17 @@ using namespace std;
 
 int main() {
 	int num;
-
-	// TODO: Take input from the user
-
-	// TODO: Implement a while loop to calculate and display the factorial of the number
-
+	cout << "Input a non-negative integer: ";
+	cin >> num;
+	if (num < 0) {
+		cout << "You have input a negative number." << endl;
+		return 1;
+	}
+	int factorial = 1;
+	while (num > 0) {
+		factorial *= num;
+		num--;
+	}
+	cout << "Factorial of your number is: " << factorial;
 	return 0;
 }

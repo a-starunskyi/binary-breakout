@@ -5,10 +5,16 @@ using namespace std;
 
 int main() {
 	int n;
+	sum = 0;
 
-	// TODO: Take input from the user
+	cout << "Input a positive integer: ";
+	cin >> n;
 
-	// TODO: Implement a for loop to calculate and display the sum of numbers from 1 to n
+	for (int i = 1; i <= n; i++) {
+		sum += 1;
+	}
+
+	cout << "The sum of numbers from 1 to " << n << " is: " << sum;
 
 	return 0;
 }

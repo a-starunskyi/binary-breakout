@@ -4,8 +4,9 @@
 using namespace std;
 
 int main() {
-
-	// TODO: Implement a loop to display numbers from 1 to 10
+	for (int i = 1; i <= 10; i++) {
+		cout << i << " ";
+	}
 
 	return 0;
 }

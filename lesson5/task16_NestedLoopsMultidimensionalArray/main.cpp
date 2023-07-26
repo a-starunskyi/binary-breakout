@@ -6,9 +6,20 @@ using namespace std;
 int main() {
 	int arr[2][2];
 
-	// TODO: Populate the array
+	cout << "Input 4 integers for the array:" << ;
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 2; j++) {
+			cin >> arr[i][j];
+		}
+	}
 
-	// TODO: Implement nested loops to sum and display the sum of all elements of the array
+	int sum = 0;
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 2; j++) {
+			sum += arr[i][j];
+		}
+	}
 
+	cout << "The sum of all elements in the array: " << sum;
 	return 0;
 }

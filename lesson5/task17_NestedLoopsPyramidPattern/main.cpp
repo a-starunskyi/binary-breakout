@@ -12,10 +12,16 @@ using namespace std;
 
 int main() {
 	int n;
+	 
+	cout << "Input the number of rows for the pyramid: ";
+	cin >> n;
 
-	// TODO: Take input from the user
-
-	// TODO: Implement nested loops to print a pyramid of stars of n rows
-
+	for (int i = 1; i < n; i++) {
+		for (int j = 1; j <= i; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+	
 	return 0;
 }

@@ -4,8 +4,15 @@
 using namespace std;
 
 int main() {
+	int num = 1;
+	do {
+		cout << "Input a number (0 to stop): ";
+		cin >> num;
 
-	// TODO: Implement a do...while loop to take numbers from user until zero is entered
+		if (number != 0) {
+			cout << "Your number: " << num << endl;
+		}
+	} while (number != 0);
 
 	return 0;
 }

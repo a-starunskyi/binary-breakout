@@ -5,8 +5,11 @@ using namespace std;
 
 int main() {
 	int num = 10;
-
-	// TODO: Implement a loop using 'goto' to display numbers from 10 to 1
+start:
+	cout << num << " ";
+	num--;
+	if (num >= 1)
+		goto start;
 
 	return 0;
 }

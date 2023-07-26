@@ -5,10 +5,17 @@ using namespace std;
 
 int main() {
 	int num;
-
-	// TODO: Take input from the user
-
-	// TODO: Implement the nested if statements to determine and display if the number is positive, negative, or zero.
+	cout << "Input the value for the number"
+	cin >> num;
+	if (num > 0) {
+		cout << "Number is positive.";
+		if (num<0){
+			cout << "Number is negative.";
+			if (num == 0) {
+				cout << "Number is zero.";
+			}
+		}
+	}
 
 	return 0;
 }
