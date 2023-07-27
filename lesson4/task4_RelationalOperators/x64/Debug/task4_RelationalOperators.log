@@ -1,0 +1,21 @@
+﻿  main.cpp
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(8,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(8,40): error C2065: 'endl': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(10,5): error C2146: syntax error: missing ';' before identifier 'cin'
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(10,5): error C2065: 'cin': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(11,5): error C2065: 'cin': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(12,5): error C2065: 'cin': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(23,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(23,72): error C2065: 'endl': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(24,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(24,76): error C2065: 'endl': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(25,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(25,78): error C2065: 'endl': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(26,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(26,76): error C2065: 'endl': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(28,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(28,76): error C2065: 'endl': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(29,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(29,78): error C2065: 'endl': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(30,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task4_RelationalOperators\main.cpp(30,76): error C2065: 'endl': undeclared identifier

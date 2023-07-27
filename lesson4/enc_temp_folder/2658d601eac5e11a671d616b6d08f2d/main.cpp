@@ -8,10 +8,7 @@ int main() {
     // 1. Ask the user to input at least three integers
     cout << "Enter 3 integer: " << endl;
     int num1 = 0, num2 = 0, num3 = 0;
-    cin >> num1;
-    cin >> num2;
-    cin >> num3;
- 
+    cin >> num1, num2, num3;
 
     // 2. Perform a variety of operations on these integers
     int res1 = num1 / num2 * num3;

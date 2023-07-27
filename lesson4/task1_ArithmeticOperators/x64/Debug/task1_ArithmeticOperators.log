@@ -1,0 +1,6 @@
+﻿  main.cpp
+E:\GitHub\binary-breakout\lesson4\task1_ArithmeticOperators\main.cpp(14,26): error C3873: '0x2013': this character is not allowed as a first character of an identifier
+E:\GitHub\binary-breakout\lesson4\task1_ArithmeticOperators\main.cpp(14,26): error C2146: syntax error: missing ';' before identifier '–'
+E:\GitHub\binary-breakout\lesson4\task1_ArithmeticOperators\main.cpp(14,26): error C2065: '–': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task1_ArithmeticOperators\main.cpp(14,30): error C2146: syntax error: missing ';' before identifier 'b'
+E:\GitHub\binary-breakout\lesson4\task1_ArithmeticOperators\main.cpp(14,32): warning C4552: '-': result of expression not used

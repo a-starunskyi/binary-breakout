@@ -1,0 +1,10 @@
+﻿  main.cpp
+E:\GitHub\binary-breakout\lesson4\task8_CompoundAssignmentOperators\main.cpp(8,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task8_CompoundAssignmentOperators\main.cpp(8,34): error C2065: 'endl': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task8_CompoundAssignmentOperators\main.cpp(10,5): error C2065: 'cin': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task8_CompoundAssignmentOperators\main.cpp(12,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task8_CompoundAssignmentOperators\main.cpp(12,49): error C2065: 'endl': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task8_CompoundAssignmentOperators\main.cpp(13,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task8_CompoundAssignmentOperators\main.cpp(13,49): error C2065: 'endl': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task8_CompoundAssignmentOperators\main.cpp(14,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task8_CompoundAssignmentOperators\main.cpp(14,49): error C2065: 'endl': undeclared identifier

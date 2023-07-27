@@ -1,0 +1,9 @@
+﻿  main.cpp
+E:\GitHub\binary-breakout\lesson4\task3_EqualityInequalityOperators\main.cpp(8,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task3_EqualityInequalityOperators\main.cpp(8,38): error C2065: 'endl': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task3_EqualityInequalityOperators\main.cpp(10,5): error C2065: 'cin': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task3_EqualityInequalityOperators\main.cpp(11,5): error C2065: 'cin': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task3_EqualityInequalityOperators\main.cpp(18,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task3_EqualityInequalityOperators\main.cpp(18,55): error C2065: 'endl': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task3_EqualityInequalityOperators\main.cpp(19,5): error C2065: 'cout': undeclared identifier
+E:\GitHub\binary-breakout\lesson4\task3_EqualityInequalityOperators\main.cpp(19,59): error C2065: 'endl': undeclared identifier
