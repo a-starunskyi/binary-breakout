@@ -5,6 +5,14 @@ using namespace std;
 
 int main() {
 	int n;
+	int sum = 0;
+	std::cout << "enter a positive number: ";
+	std::cin >> n;
+	for (int num = 1; num <= n; num++) {
+		sum += num;
+	}
+	std::cout << "sus from 1 to " << n << " is: " << sum << std::endl;
+
 
 	// TODO: Take input from the user
 

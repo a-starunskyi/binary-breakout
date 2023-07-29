@@ -4,9 +4,17 @@
 using namespace std;
 
 int main() {
-	int num = 10;
+	int number = 10;
 
+burgerKing:
+    std::cout << number << "\n";
+    number--;
+
+    if (number > 0) {
+        goto burgerKing;
+    }
 	// TODO: Implement a loop using 'goto' to display numbers from 10 to 1
 
 	return 0;
 }
+//BURGERKING

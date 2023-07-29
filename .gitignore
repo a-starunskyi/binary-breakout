@@ -18,3 +18,15 @@
 Debug/
 Release/
 x64/
+lesson8/game.cpp
+lesson8/game.hpp
+lesson8/bird.cpp
+lesson8/lesson8.vcxproj
+lesson8/lesson8.vcxproj.filters
+lesson8/lesson8.vcxproj
+lesson8/lesson8.vcxproj.filters
+lesson8/main.cpp
+lesson8/settings.hpp
+lesson8/main.cpp
+lesson8/main.cpp
+lesson8/main.cpp
