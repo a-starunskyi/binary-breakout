@@ -6,7 +6,24 @@ using namespace std;
 
 int main() {
 
+	int sum = 0;
 	// TODO: Implement a loop with 'continue' and 'break' to perform the specified task
+
+	for (int i = 1; i <= 100; ++i )
+	{
+		if (i % 3 == 0)
+		{
+			continue;
+		}
+
+		if (sum + 1 > 1000)
+		{
+			break;
+		}
+
+		sum += i;
+		cout << "Numbers: " << sum << endl;
+	}
 
 	return 0;
 }

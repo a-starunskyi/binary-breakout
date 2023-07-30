@@ -7,6 +7,13 @@ int main() {
 	int num = 10;
 
 	// TODO: Implement a loop using 'goto' to display numbers from 10 to 1
+Start: 
+	cout << num-- << endl;
+
+	if (num != 0)
+	{
+		goto Start;
+	}
 
 	return 0;
 }

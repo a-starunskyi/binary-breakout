@@ -3,9 +3,18 @@
 #include<iostream>
 using namespace std;
 
-int main() {
+int main()
+{
+    // TODO: Implement a do...while loop to take numbers from user until zero is entered
+    int num = 0;
 
-	// TODO: Implement a do...while loop to take numbers from user until zero is entered
+    do
+    {
+        cout << "Enter a number: " << endl; 
+        cin >> num;
+    } while (num != 0); 
 
-	return 0;
+    cout << "A zero was entered, goodbye!" << endl;
+
+    return 0;
 }

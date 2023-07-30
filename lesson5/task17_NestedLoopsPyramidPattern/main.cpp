@@ -15,7 +15,18 @@ int main() {
 
 	// TODO: Take input from the user
 
+	cout << "Enter a number: " << endl;
+	cin >> n;
+
 	// TODO: Implement nested loops to print a pyramid of stars of n rows
 
+	for (int a = 1; a <= n; a++)
+	{
+		for (int b = 1; b <= a; b++)
+		{
+			cout << "*";
+		}
+		cout << endl;
+	}
 	return 0;
 }
