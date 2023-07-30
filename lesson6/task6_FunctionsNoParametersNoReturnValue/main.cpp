@@ -3,10 +3,16 @@
 
 #include<iostream>
 using namespace std;
+void greetUser() {
+	string name;
+	cout << "Enter your name: ";
+	cin >> name;
 
-// TODO: Declare and define the function that asks the user's name and greets the user
+	cout << "Hello, " << name << "! Nice to meet you!" << endl;
+}
 
 int main() {
-	// TODO: Call the function
+	greetUser();
+
 	return 0;
 }

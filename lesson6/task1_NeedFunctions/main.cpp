@@ -2,10 +2,20 @@
 
 #include<iostream>
 using namespace std;
-
-// TODO: Declare and define the function to calculate area of a circle
+const double Pi = 3.14159;
+double circleArea(double radius) {
+	return Pi * radius * radius;
+}
 
 int main() {
-	// TODO: Call the function to calculate area of a circle
+	double radius;
+
+	cout << "Input the value for the radius of the circle: ";
+	cin >> radius;
+
+	double area = circleArea(radius);
+
+	cout << "The area of the circle is: " << area;
+
 	return 0;
 }

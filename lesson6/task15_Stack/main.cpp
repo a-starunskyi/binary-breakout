@@ -3,9 +3,10 @@
 #include<iostream>
 using namespace std;
 
-// TODO: Write a recursive function that generates a stack overflow error to demonstrate understanding of the stack
-
+void stackOverflow() {
+	stackOverflow(); // Recursive call to itself
+}
 int main() {
-	// TODO: Call the recursive function
-	return 0;
+	stackOverflow();
+	 return 0;
 }

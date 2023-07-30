@@ -3,9 +3,17 @@
 #include<iostream>
 using namespace std;
 
-// TODO: Write an inline function that squares a number
-
+inline int square(int num) {
+	return num * num;
+}
 int main() {
-	// TODO: Call the inline function
-	return 0;
+	int number = 0;
+	cout << "Enter a number: ";
+	cin >> number;
+
+	int result = square(number);
+
+	cout << "The square of " << number << " is: " << result;
+
+	 return 0;
 }

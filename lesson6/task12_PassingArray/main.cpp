@@ -3,9 +3,27 @@
 #include<iostream>
 using namespace std;
 
-// TODO: Declare and define the function that calculates the sum of elements in an array
+int sumArrayElements(int arr[], int size) {
+	int sum = 0;
+	for (int i = 0, i < size, i++) {
+		sum += arr[i];
+	}
+	return sum;
+}
 
 int main() {
-	// TODO: Call the function
+	int size;
+	cout << "Enter the size of the array: ";
+	cin >> size;
+	
+	int arr[size];
+	cout << "Enter " << size << " elements: ";
+	for (int i = 0; i < size, i++) {
+		cin >> arr[i];
+	}
+	
+	int result = sumArrayElements(arr, size);
+	cout << "Sum of elements in the array: " << result << endl;
+
 	return 0;
 }

@@ -3,9 +3,16 @@
 #include<iostream>
 using namespace std;
 
-// TODO: Write a function that uses automatic return type deduction
+auto add(auto num1, auto num2) {
+	return num1 + num2;
+}
 
 int main() {
-	// TODO: Call the function
+	auto number1 = 5;
+	auto number2 = 7;
+
+	auto result = add(number1 + number2);
+
+	cout << "Result: " << result << endl;
 	return 0;
 }

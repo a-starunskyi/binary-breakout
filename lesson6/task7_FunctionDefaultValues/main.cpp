@@ -3,9 +3,14 @@
 #include<iostream>
 using namespace std;
 
-// TODO: Declare and define the function that multiplies two integers with default values
+int multiply(int a = 1, intb = 1) {
+	return a * b;
+}
 
 int main() {
-	// TODO: Call the function
+	int result = multiply();
+
+	cout << "The result is: " << result;
+
 	return 0;
 }

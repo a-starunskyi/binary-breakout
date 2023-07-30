@@ -3,9 +3,23 @@
 #include<iostream>
 using namespace std;
 
-// TODO: Declare and define the function that swaps two integers
+void swapIntegers(int& num1, int& num2) {
+	int temp = num1;
+	num1 = num2;
+	num2 = temp;
+}
 
 int main() {
-	// TODO: Call the function
+	int num1, num2;
+	
+	cout << "Enter two integers: ";
+	cin >> num1 >> num2;
+
+	cout << "Before swapping: num1 = " << num1 << ", num2= " << num2 << endl;
+	// Calling the function to swap the values of numbers
+	swapIntegers(num1, num2);
+	
+	cout << "After swapping: num1 = " << num1 << ", num2 = " << num2 << endl;
+
 	return 0;
 }

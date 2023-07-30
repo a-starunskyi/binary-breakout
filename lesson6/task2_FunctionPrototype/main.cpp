@@ -4,9 +4,23 @@
 #include<iostream>
 using namespace std;
 
-// TODO: Declare the function prototype
+int sum(int a, int b);
 
 int main() {
-	// TODO: Define and call the function
+	int numOne = 0;
+	int numTwo = 0;
+
+	cout << "Enter the first integer: ";
+	cin >> numOne;
+	
+	cout << "Enter the second integer: ";
+	cin >> numTwo;
+
+	int result = sum(numOne, numTwo);
+	
+	cout << "The sum of " << numOne << " and " << numTwo << " is: " << result;
 	return 0;
 }
+int sum(int a, int b) {
+	return a + b;
+ }
