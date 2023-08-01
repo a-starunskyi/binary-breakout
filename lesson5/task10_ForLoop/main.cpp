@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 	int n;
-	sum = 0;
+	int sum = 0;
 
 	cout << "Input a positive integer: ";
 	cin >> n;

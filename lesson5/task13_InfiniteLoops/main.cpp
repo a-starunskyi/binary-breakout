@@ -5,13 +5,15 @@ using namespace std;
 
 int main() {
 	while (true) {
-		int number;
-		cout << "Input a number (enter a negative number to stop): ";
-		cin>>number
-			if (number < 0) {
-				break;
-			}
-		cout << "The number you input: " << number;
+	int number;
+	cout << "Input a number (enter a negative number to stop): ";
+	cin >> number;
+
+	if (number < 0) {
+		break;
+	}
+
+	cout << "The number you input: " << number;
 	}
 
 	return 0;
