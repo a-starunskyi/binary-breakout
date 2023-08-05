@@ -4,9 +4,9 @@
 using namespace std;
 
 // TODO: Declare and define the function that calculates the sum of elements in an array
-int arrSum(int arr[], int b);
+int arrSum(int arr[], int sizeArr);
 
-int main(int arr[], int b)
+int main()
 {
 
 	int arrNum[5] = {2,3,6,4,2};
@@ -17,11 +17,11 @@ int main(int arr[], int b)
 	return 0;
 }
 
-int arrSum(int arr[], int b)
+int arrSum(int arr[], int sizeArr)
 {
 	int sum = 0;
 
-	for (int i = 0; i < b; i++)
+	for (int i = 0; i < sizeArr; i++)
 	{
 		
 		sum = sum + arr[i];

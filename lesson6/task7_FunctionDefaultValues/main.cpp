@@ -5,14 +5,13 @@ using namespace std;
 
 // TODO: Declare and define the function that multiplies two integers with default values
 
-int miltInt(int a, int b);
+int miltInt(int a, int b = 4);
 
 int main() 
 {
 	int a = 2;
-	int b = 4;
 
-	cout << "Multiplication of number =" << miltInt(a,b) << endl;
+	cout << "Multiplication of number =" << miltInt(a) << endl;
 
 	// TODO: Call the function
 	return 0;

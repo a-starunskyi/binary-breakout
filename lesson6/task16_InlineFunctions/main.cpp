@@ -3,8 +3,9 @@
 #include<iostream>
 using namespace std;
 
-int squaresNum(int a);
-// TODO: Write an inline function that squares a number
+inline int squareNum(int Num) {
+	return Num * Num;
+}
 
 int main() {
 	// TODO: Call the inline function
@@ -14,12 +15,7 @@ int main() {
 	cin >> Num;
 
 	cout << "The square of a number = ";
-	cout << squaresNum(Num);
+	cout << squareNum(Num);
 
 	return 0;
-}
-
-int squaresNum(int a)
-{
-	return a * a;
 }

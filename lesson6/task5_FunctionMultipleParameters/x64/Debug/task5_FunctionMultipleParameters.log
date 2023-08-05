@@ -1,2 +1,3 @@
 ﻿  main.cpp
+C:\Users\Admin\Desktop\BinaryBreakout\lesson6\task5_FunctionMultipleParameters\main.cpp(39): warning C4715: 'quadraticFormula': not all control paths return a value
   task5_FunctionMultipleParameters.vcxproj -> C:\Users\Admin\Desktop\BinaryBreakout\lesson6\x64\Debug\task5_FunctionMultipleParameters.exe

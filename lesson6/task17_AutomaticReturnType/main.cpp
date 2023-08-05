@@ -4,7 +4,7 @@
 using namespace std;
 
 // TODO: Write a function that uses automatic return type deduction
-int add(int a, int b);
+auto add(int a, int b);
 
 int main() 
 {
@@ -20,7 +20,7 @@ int main()
 	return 0;
 }
 
-int add(int a, int b)
+auto add(int a, int b)
 {
 	return a + b;
 }
