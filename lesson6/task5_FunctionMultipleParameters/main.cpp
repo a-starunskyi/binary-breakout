@@ -5,21 +5,31 @@
 #include<cmath>
 using namespace std;
 
-flouat quadraticFormula(float a, float b, float c) {
+float quadraticFormula(float a, float b, float c, bool usePositiveRoot) {
 	float discriminant = b * b - 4 * a * c;
+	
+	if (discriminant < 0) {
+		return NAN;
+	}
 
 	float sqrtDiscriminant = sqrt(discriminant);
+	float solution;
 
-	float solution1 = (-b + sqrtDiscriminant) / (2 * a);
-	float solution2 = (-b - sqrtDiscriminant) / (2 * a);
+	if (usePositiveRoot) {
+		 solution = (-b + sqrtDiscriminant) / (2 * a);
+	}
+	else {
+		 solution = (-b - sqrtDiscriminant) / (2 * a);
+	}
 
-	return solution 1;
+	return solution;
 }
 
 int main() {
 	float a = 0;
 	float b = 0;
 	float c = 0;
+	bool usePositiveRoot = true;
 
 	cout << "Enter the value of a: ";
 	cin >> a;
@@ -28,8 +38,15 @@ int main() {
 	cout << "Enter the value of c: ";
 	cin >> c;
 
-	float result = quadraticFormula(a, b, c);
-	
-	cout << "The result of the quadratic formula is: " << result << endl;
+	cout << "Do you want to use the positive root? (1 - yes, 0 - no): ";
+	cin >> usePositiveRoot;
+
+	float result = quadraticFormula(a, b, c, usePositiveRoot);
+	if (!isnan(result)) {
+		cout << "The result of the quadratic formula is: " << result << endl;
+	}
+	else {
+		cout << "No real solution." << endl;
+	}
 	return 0;
 }

@@ -12,11 +12,11 @@ int sumArrayElements(int arr[], int size) {
 }
 
 int main() {
-	int size;
+	int size = 0;
 	cout << "Enter the size of the array: ";
 	cin >> size;
 	
-	int arr[size];
+	int arr[size] = { };
 	cout << "Enter " << size << " elements: ";
 	for (int i = 0; i < size, i++) {
 		cin >> arr[i];

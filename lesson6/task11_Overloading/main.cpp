@@ -1,7 +1,7 @@
 // Problem: Overload a function named "add". 
 // It should be able to handle both addition of two integers and concatenation of two strings.
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 // Function overload for the addition of two integers
@@ -9,19 +9,19 @@ int add(int a, int b) {
 	return a + b;
 }
 // Function overload for the concatenation of two strings
-string add(const string& str1, const string& str2) {
-	return str1 + str2;
+string add(const string& a, const string& b) {
+	return a + b;
 }
 
 int main() {
 
-	int num1 = 5, num2 = 10;
-	int sumInt = add(num1, num2);
-	cout << "Sum of integers: " << sumInt << endl;
+	int intA = 5, intB = 10;
+	int intResult = add(intA, intB);
+	cout << "Sum of integers: " << intResult << endl;
 
-	string str1 = "Hello, ";
-	string str2 = "World!";
-	string concatStr = add(str1, str2);
-	cout << "Concatenated string: " << concatStr < endl;
+	string strA = "Hello, ";
+	string strB = "World!";
+	string strResult = add(strA, strB);
+	cout << "Concatenated string: " << strResult << endl;
 	return 0;
 }

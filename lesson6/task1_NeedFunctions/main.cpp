@@ -2,18 +2,18 @@
 
 #include<iostream>
 using namespace std;
-const double Pi = 3.14159;
-double circleArea(double radius) {
+const float Pi = 3.14159;
+float circleArea(float radius) {
 	return Pi * radius * radius;
 }
 
 int main() {
-	double radius;
+	float radius;
 
 	cout << "Input the value for the radius of the circle: ";
 	cin >> radius;
 
-	double area = circleArea(radius);
+	float area = circleArea(radius);
 
 	cout << "The area of the circle is: " << area;
 

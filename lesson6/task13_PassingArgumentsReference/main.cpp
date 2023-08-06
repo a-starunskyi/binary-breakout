@@ -10,7 +10,8 @@ void swapIntegers(int& num1, int& num2) {
 }
 
 int main() {
-	int num1, num2;
+	int num1 = 0;
+	int num2 = 0;
 	
 	cout << "Enter two integers: ";
 	cin >> num1 >> num2;
