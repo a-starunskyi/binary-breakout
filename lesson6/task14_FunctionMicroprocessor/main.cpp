@@ -1,11 +1,19 @@
 // Problem: Understand how function calls are managed by the microprocessor by writing a program that involves several nested function calls.
-
 #include<iostream>
-using namespace std;
-
-// TODO: Write several nested function calls to understand how they're managed by the microprocessor
-
+void firstFunc() {
+	std::cout << "inside firstFunc" << std::endl;
+}
+void secondFunc() {
+	std::cout << "inside secondFunc" << std::endl;
+	firstFunc();
+}
+void thirdFunc() {
+	std::cout << "inside thirdFunc" << std::endl;
+	secondFunc();
+}
 int main() {
-	// TODO: Call the nested functions
+	std::cout << "inside main" << std::endl;
+	thirdFunc();
 	return 0;
 }
+
