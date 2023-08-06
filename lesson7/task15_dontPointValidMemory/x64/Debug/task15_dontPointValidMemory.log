@@ -1,2 +1,0 @@
-﻿  main.cpp
-C:\Users\Admin\Desktop\BinaryBreakout\lesson7\task15_dontPointValidMemory\main.cpp(10): error C4700: uninitialized local variable 'ptr' used

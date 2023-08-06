@@ -1,2 +1,0 @@
-﻿  main.cpp
-C:\Users\Admin\Desktop\BinaryBreakout\lesson7\task13_mistakesUsingPointers\main.cpp(9): error C4700: uninitialized local variable 'ptr' used

@@ -1,4 +1,0 @@
-﻿  main.cpp
-C:\Users\Admin\Desktop\BinaryBreakout\lesson7\task2_declaringPointers\main.cpp(2,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\Admin\Desktop\BinaryBreakout\lesson7\task2_declaringPointers\main.cpp(7,15): warning C4305: 'initializing': truncation from 'double' to 'float'
-  task2_declaringPointers.vcxproj -> C:\Users\Admin\Desktop\BinaryBreakout\lesson7\x64\Debug\task2_declaringPointers.exe
