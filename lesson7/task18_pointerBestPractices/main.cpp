@@ -1,0 +1,1 @@
+// Problem 18: Write a program that demonstrates best practices for using pointers. Explain these practices in comments.
