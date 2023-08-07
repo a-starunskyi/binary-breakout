@@ -5,43 +5,44 @@
 #include <SFML/Window/Keyboard.hpp>
 #include <SFML/Graphics/CircleShape.hpp>
 
-namespace
+const float Bird::JUMP_FORCE = -200.f;
+
+Bird::Bird()
+	: m_x(setting::WINDOW_WIDTH / 4.f)
+	, m_y(setting::WINDOW_HEIGHT / 2.f)
+	, m_speed(0.f)
 {
-	// Properties
-	float x = setting::WINDOW_WIDTH / 4.f;
-	float y = setting::WINDOW_HEIGHT / 2.f;
-	float speed = 0.f;
 }
 
-namespace bird
+Bird::Bird(float initX, float initY)
+	: m_x(initX)
+	, m_y(initY)
+	, m_speed(0.f)
+	
 {
-	void jump()
+}
+
+void Bird::jump()
+{
+	m_speed = JUMP_FORCE;
+}
+
+void Bird::tick(float dt)
+{
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
 	{
-		speed = setting::JUMP_FORCE;
+		jump();
 	}
 
-	void tick(float dt)
-	{
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
-		{
-			jump();
-		}
+	m_speed += setting::BIRD_GRAVITY * dt;
+	m_y += m_speed * dt;
+}
 
-		speed += setting::BIRD_GRAVITY * dt;
-		y += speed * dt;
-	}
+void Bird::render()
+{
+	sf::CircleShape bird(setting::BIRD_RADIUS);
+	bird.setFillColor(setting::BIRD_COLOR);
+	bird.setPosition(m_x, m_y);
 
-	void render()
-	{
-		sf::CircleShape bird(setting::BIRD_RADIUS);
-		bird.setFillColor(setting::BIRD_COLOR);
-		bird.setPosition(x, y);
-
-		game::draw(bird);
-	}
-
-	float getBirdY()
-	{
-		return y;
-	}
+	Game::getInstance().draw(bird);
 }
