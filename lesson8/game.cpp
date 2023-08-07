@@ -1,67 +1,83 @@
 #include "game.hpp"
 #include "settings.hpp"
-#include "bird.hpp"
+//#include "bird.hpp"
 
-#include <SFML/Graphics.hpp>
 
-namespace
+
+Game::Game()
+	: m_window({ setting::WINDOW_WIDTH, setting::WINDOW_HEIGHT }, "Flappy Bird")
+	, m_birds{nullptr}
 {
-	// Properties
-	sf::RenderWindow window{ {setting::WINDOW_WIDTH, setting::WINDOW_HEIGHT}, "Flappy Bird" };
-
-	// Functions
-	void tick(float dt)
+	float birdY = 0.f;
+	for (auto& pBird : m_birds)
 	{
-		bird::tick(dt);
-	}
-
-	void render()
-	{
-		bird::render();
-	}
-
-	void handleEvent(const sf::Event& event)
-	{
-		switch (event.type)
-		{
-		case sf::Event::Closed:
-			game::exit();
-			break;
-		}
-
-		
+		pBird = new Bird(birdY);
+		birdY += 20.f;
 	}
 }
 
-namespace game
+Game::~Game()
 {
-	void run()
+	for (auto& pBird : m_birds)
 	{
-		sf::Clock clock;
-		while (window.isOpen())
+		delete pBird;
+		pBird = nullptr;
+	}
+}
+
+void Game::run()
+{
+	sf::Clock clock;
+	while (m_window.isOpen())
+	{
+		sf::Event event;
+		while (m_window.pollEvent(event))
 		{
-			sf::Event event;
-			while (window.pollEvent(event))
-			{
-				handleEvent(event);
-			}
-
-			sf::Time elapsed = clock.restart();
-			tick(elapsed.asSeconds());
-
-			window.clear(sf::Color::Blue);
-			render();
-			window.display();
+			handleEvent(event);
 		}
-	}
 
-	void exit()
-	{
-		window.close();
-	}
+		sf::Time elapsed = clock.restart();
+		tick(elapsed.asSeconds());
 
-	void draw(const sf::Shape& shape)
+		m_window.clear(sf::Color::Blue);
+		render();
+		m_window.display();
+	}
+}
+
+void Game::exit()
+{
+	m_window.close();
+}
+
+void Game::draw(const sf::Shape& shape)
+{
+	m_window.draw(shape);
+}
+
+void Game::tick(float dt)
+{
+	for (auto& bird : m_birds)
 	{
-		window.draw(shape);
+
+		bird->tick(dt);
+	}
+}
+
+void Game::render()
+{
+	for (auto& bird : m_birds)
+	{
+		bird->render();
+	}
+}
+
+void Game::handleEvent(const sf::Event& event)
+{
+	switch (event.type)
+	{
+	case sf::Event::Closed:
+		exit();
+		break;
 	}
 }

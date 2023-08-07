@@ -1,7 +1,10 @@
 #include "game.hpp"
 
+#include <iostream>
+
+
 int main()
 {
-	game::run();
+	Game::getInstance().run();
 	return 0;
 }
