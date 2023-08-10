@@ -4,8 +4,26 @@
 using namespace std;
 
 // TODO: Declare the 'Size' class
+class Size
+{
+public:
+	Size(int x, int y)
+		:sizeX(x),sizeY(y)
+	{
 
-int main() {
+	}
+
+private:
+	int sizeX;
+	int sizeY;
+};
+
+int main()
+{
 	// TODO: Use the sizeof() function on the 'Size' class
+	Size one(322,222);
+
+	cout << sizeof(Size) << endl;
+	cout << sizeof(one) << endl;
 	return 0;
 }

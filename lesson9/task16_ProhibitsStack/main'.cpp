@@ -4,8 +4,28 @@
 using namespace std;
 
 // TODO: Declare the 'HeapOnly' class
+class HeapOnly 
+{
+public:
+    static HeapOnly* createInstance() 
+    {
+        return new HeapOnly();
+    }
+
+    void showMessage() {
+        std::cout << "Hello from the HeapOnly instance!" << std::endl;
+    }
+
+private:
+    HeapOnly() {} 
+
+};
+
 
 int main() {
 	// TODO: Try to create an instance of the 'HeapOnly' class on the stack and on the heap
+
+    HeapOnly* heapOnlyPtr = HeapOnly::createInstance();
+    heapOnlyPtr->showMessage();
 	return 0;
 }

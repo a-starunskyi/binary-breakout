@@ -4,8 +4,25 @@
 using namespace std;
 
 // TODO: Declare a struct and a class
+struct Aggregate1
+{
+	int num;
+	char hello[6];
+	int impYears[5];
+};
 
-int main() {
+class Aggregate2
+{
+	int number;
+	char helloWorld[12];
+	int impMonth[12];
+};
+
+int main()
+{
+	Aggregate1 a1 = { {12} , {'h','e','l','l','o'} , {1,2,3,4,5} };
+
+	cout << a1.hello << endl;
 	// TODO: Use aggregate initialization to set the members of the struct and the class
 	return 0;
 }

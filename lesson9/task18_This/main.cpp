@@ -5,7 +5,32 @@ using namespace std;
 
 // TODO: Declare the 'SelfReferential' class and use the 'this' pointer
 
-int main() {
+class SelfReferential 
+{
+public:
+    SelfReferential(int value)
+        : m_value(value) 
+    {
+
+    }
+
+    void printValue()
+    {
+
+        cout<< this->m_value << endl;
+    }
+
+private:
+    int m_value;
+};  
+
+int main() 
+{
 	// TODO: use the 'SelfReferential' class
+
+    SelfReferential obj(42);
+
+    obj.printValue();
+
 	return 0;
 }

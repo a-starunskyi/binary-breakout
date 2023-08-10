@@ -4,8 +4,22 @@
 using namespace std;
 
 // TODO: Declare the 'Circle' class
+class Circle
+{
+public :
+	int radius;
+	int diameter;
 
-int main() {
+	void radiusOfCircle();
+
+};
+
+int main() 
+{
 	// TODO: Create an instance of the 'Circle' class and use the dot operator to access the member function
-	return 0;
+	Circle circle;
+
+	circle.diameter = 10;
+	circle.radius = 5;
+
 }

@@ -4,8 +4,21 @@
 using namespace std;
 
 // TODO: Declare the 'Car' class
+class Car
+{
+private:
+	int speed;
+	string color;
 
-int main() {
+public:
+	void getSpeed();
+	void getColor();
+
+};
+
+int main()
+{
+
 	// TODO: Create an instance of the 'Car' class
 	return 0;
 }
