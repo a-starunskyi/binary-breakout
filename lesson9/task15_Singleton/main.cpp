@@ -19,7 +19,15 @@ public:
     }
 
 private:
-    Singleton() {}
+
+    Singleton(const  Singleton&)
+    {
+
+    }
+    Singleton() 
+    {
+
+    }
 
 };
 
@@ -30,7 +38,7 @@ int main()
 
     singleton1.showMessage();
 
-   // Singleton sing2; dont work;
+  // Singleton sing2(singleton1);
 
 
 	// TODO: Try to create multiple instances of the 'Singleton' class

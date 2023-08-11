@@ -8,6 +8,11 @@ using namespace std;
 class FastTransfer
 {
 public:
+
+	FastTransfer (FastTransfer& source)
+	{
+		num = source.num;
+	}
 	
 	FastTransfer(int number)
 		:num(number)
@@ -15,21 +20,18 @@ public:
 
 	}
 
+
 	int num;
 };
 
-FastTransfer Copy(FastTransfer& source)
-{
-	FastTransfer copyForReturn(source);
-	return copyForReturn; 
-}
+
 
 int main() {
 	// TODO: Demonstrate how move constructors can help improve performance
 
 	FastTransfer trans(42);
 
-	FastTransfer transAgain(Copy(trans));
+	FastTransfer transAgain(trans);
 
 	cout << transAgain.num << endl;
 

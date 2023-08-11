@@ -12,12 +12,13 @@ public:
 		RAM = ram;
 	}
 
-	int RAM;
-
 	~Computer()
 	{
 		cout << "This class deleted" << endl;
 	}
+private:
+
+	int RAM;
 };
 
 int main() {

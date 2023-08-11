@@ -17,7 +17,11 @@ public:
     }
 
 private:
-    HeapOnly() {} 
+    HeapOnly()
+    {
+    } 
+
+    ~HeapOnly() {};
 
 };
 

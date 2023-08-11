@@ -12,13 +12,15 @@ class Note
 {
 public:
 	Note(string n_title, int n_page)
+		:title(n_title),page(n_page)
 	{
-		title = n_title;
-		page = n_page;
-	};
+	}
 
-	string title;
-	int page;
+	Note(const Note& other)
+		:title(other.title),page(other.page)
+	{
+
+	};
 
 	void print()
 	{
@@ -26,12 +28,17 @@ public:
 		cout << page << endl;
 		cout << endl;
 	}
+
+private:
+
+	string title;
+	int page;
 };
 
 int main()
 {
 	Note notepad("Note", 12);
-	Note notepadTwo{ notepad };
+	Note notepadTwo(notepad);
 
 	notepad.print();
 	notepadTwo.print();

@@ -4,13 +4,13 @@
 using namespace std;
 
 // TODO: Declare the 'Employee' class with a constructor
-class Triangle
+class Employee
 {
 	int height;
 
 public:
 
-	Triangle(int he)
+	Employee(int he)
 	{
 		height = he;
 	};// declaration of a constructor
@@ -20,5 +20,9 @@ public:
 int main() 
 {
 	// TODO: Create an instance of the 'Employee' class and explain the purpose of a constructor in comments
+
+	Employee emp(12);//Does not allow to create an element without setting its height
+
+
 	return 0;
 }

@@ -13,11 +13,20 @@ public:
 
 	}
 
-	DeepPerson(DeepPerson& sample)
+	DeepPerson(const DeepPerson& sample)
 	{
 		age = sample.age;
 		name = sample.name;
 	}
+
+	void getAgeName()
+	{
+		cout << name << endl;
+		cout << age << endl;
+		cout << endl;
+	}
+
+private:
 
 	int age;
 	string name;
@@ -30,7 +39,8 @@ int main()
 
 	DeepPerson nikitaKrutenko( markKarpenko);
 
-	cout << nikitaKrutenko.age << " " << nikitaKrutenko.name << endl;
+	nikitaKrutenko.getAgeName();
+	nikitaKrutenko.getAgeName();
 
 	// TODO: Create instances of the 'DeepPerson' class and show that deep copying avoids the problems of shallow copying
 	return 0;

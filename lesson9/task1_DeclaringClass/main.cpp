@@ -7,18 +7,29 @@ using namespace std;
 class Car
 {
 private:
+
+public:
 	int speed;
 	string color;
 
-public:
-	void getSpeed();
-	void getColor();
+	void getSpeed()
+	{
+		cout << speed << endl;
+	}
+	void getColor()
+	{
+		cout << color << endl;
+	}
 
 };
 
 int main()
 {
+	Car sportCar;
 
+	sportCar.color = "Red";
+
+	sportCar.getColor();
 	// TODO: Create an instance of the 'Car' class
 	return 0;
 }

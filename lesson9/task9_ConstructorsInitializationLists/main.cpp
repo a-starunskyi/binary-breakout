@@ -6,14 +6,19 @@ using namespace std;
 // TODO: Declare the 'Rectangle' class with a constructor that uses an initialization list
 class Rectangle
 {
-public:
+private:
 
     double width;
     double height;
 
-
+public:
     Rectangle(double width, double height)
         : width(width), height(height)
+    {
+
+    }
+
+    void Area()
     {
         cout << width * height << endl;
     }
@@ -25,7 +30,8 @@ int main()
 {
  
     Rectangle rectangle(5.0, 3.0);
-
+    
+    rectangle.Area();
 
 
 	// TODO: Create an instance of the 'Rectangle' class
