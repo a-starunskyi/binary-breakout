@@ -7,25 +7,26 @@
 using namespace std;
 
 int main() {
+
     const int maxInputs = 100;
-    int input;
-    int count = 0;
+    int inputCount = 0;
 
-    while (count < maxInputs) {
-        cout << "Enter number " << (count + 1) << ": ";
-        cin >> input;
+    while (true) {
+        int num;
+        cout << "Enter a number: ";
+        cin >> num;
 
-        if (input < 0) {
-            cout << "Terminating the program because a negative number was entered.\n";
+        if (num < 0) {
+            cout << "Terminating the program because a negative number was entered." << endl;
             break;
         }
 
-        count++;
-    }
+        inputCount++;
 
-    if (count == maxInputs) {
-        cout << "Program termination after 100 inputs.\n";
+        if (inputCount >= maxInputs) {
+            cout << "Maximum input limit reached. Exiting loop." << endl;
+            break;
+        }
     }
-
     return 0;
 }

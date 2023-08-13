@@ -12,16 +12,16 @@ int main() {
 	enum DaysOfWeek
 	{
 		Sunday = 0,
-		Monday,
-		Tuesday,
-		Wednesday,
-		Thursday,
-		Friday,
-		Saturday
+		Monday = 1,
+		Tuesday = 2,
+		Wednesday = 3,
+		Thursday = 4,
+		Friday = 5,
+		Saturday = 6,
 	};
 
 
-	int dayInput;
+	int dayInput = Sunday;
 	cout << "Enter a number for a day (Sunday = 0): ";
 	cin >> dayInput;
 

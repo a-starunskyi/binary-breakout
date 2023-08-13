@@ -1,31 +1,32 @@
-#include <iostream>
 
+#include <iostream>
 using namespace std;
 
-int main() {
+    int main() 
+    {
 
-    // TODO: Take input from the user 
-    
-    // TODO: Implement a while loop to calculate and display the factorial of the number
+        // TODO: Take input from the user 
 
-    int number;
-    cout << "Enter a positive integer: ";
-    cin >> number;
+        // TODO: Implement a while loop to calculate and display the factorial of the number
 
-    if (number < 0) {
-        cout << "Factorial is not defined for negative numbers." << endl;
-        return 1;
+
+        int num;
+        cout << "Enter a positive integer: ";
+        cin >> num;
+
+        if (num < 0) {
+            cout << "Factorial is not defined for negative numbers" << endl;
+            return 1;
+        }
+
+        int factorial = 1;
+        int i = 1;
+
+        while (i <= num) {
+            factorial *= i;
+            i++;
+        }
+        cout << "Factorial of " << num << " is: " << factorial << endl;
+        return 0;
     }
 
-    int factorial = 1;
-    int i = 1;
-
-    while (i <= number) {
-        factorial *= i;
-        i++;
-    }
-
-    cout << "Factorial of " << number << " is: " << factorial << endl;
-
-    return 0;
-}
