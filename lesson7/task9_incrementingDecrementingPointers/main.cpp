@@ -15,7 +15,7 @@ int main() {
 	}
 	cout << endl;
 
-	ptr = arr;
+	ptr = arr+4;
 	
 	cout << "Values pointed by the pointer after resetting: " << endl;
 	for (int i = 0; i < 5; i++) {
