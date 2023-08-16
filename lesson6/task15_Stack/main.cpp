@@ -1,11 +1,45 @@
-// Problem: Demonstrate understanding of the stack by writing a recursive function that generates a stack overflow error.
-
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-// TODO: Write a recursive function that generates a stack overflow error to demonstrate understanding of the stack
+class Animal
+{
+public:
+    Animal()
+    {
+        cout << "Animal constructor" << endl;
+    }
 
-int main() {
-	// TODO: Call the recursive function
-	return 0;
+    // sample member
+    int age;
+};
+
+class Mammal :public virtual Animal
+{
+};
+
+class Bird :public virtual Animal
+{
+};
+
+class Reptile :public virtual Animal
+{
+};
+
+class Platypus final :public Mammal, public Bird, public Reptile
+{
+public:
+    Platypus()
+    {
+        cout << "Platypus constructor" << endl;
+    }
+};
+
+int main()
+{
+    Platypus duckBilledP;
+
+    // no compile error as there is only one Animal::age
+    duckBilledP.age = 25;
+
+    return 0;
 }

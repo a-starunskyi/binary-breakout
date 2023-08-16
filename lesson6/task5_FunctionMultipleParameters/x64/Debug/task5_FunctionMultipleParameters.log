@@ -1,0 +1,5 @@
+﻿  main.cpp
+E:\GitHub\binary-breakout\lesson6\task5_FunctionMultipleParameters\main.cpp(20,2): error C2660: 'formula': function does not take 5 arguments
+E:\GitHub\binary-breakout\lesson6\task5_FunctionMultipleParameters\main.cpp(8,7): message : see declaration of 'formula'
+E:\GitHub\binary-breakout\lesson6\task5_FunctionMultipleParameters\main.cpp(20,2): message : while trying to match the argument list '(float, float, float, float, float)'
+E:\GitHub\binary-breakout\lesson6\task5_FunctionMultipleParameters\main.cpp(29,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
