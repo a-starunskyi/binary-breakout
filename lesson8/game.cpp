@@ -6,23 +6,20 @@
 
 Game::Game()
 	: m_window({ setting::WINDOW_WIDTH, setting::WINDOW_HEIGHT }, "Flappy Bird")
-	, m_birds{nullptr}
+	, m_pipe{nullptr}
 {
-	float birdY = 0.f;
-	for (auto& pBird : m_birds)
-	{
-		pBird = new Bird(birdY);
-		birdY += 20.f;
+	float pipeX = setting::WINDOW_WIDTH;
+
+	for(auto& n_pipes: m_pipe)
+	{ 
+		n_pipes = new Pipe(pipeX);
+		pipeX -=400;
 	}
 }
 
 Game::~Game()
 {
-	for (auto& pBird : m_birds)
-	{
-		delete pBird;
-		pBird = nullptr;
-	}
+	
 }
 
 void Game::run()
@@ -57,18 +54,22 @@ void Game::draw(const sf::Shape& shape)
 
 void Game::tick(float dt)
 {
-	for (auto& bird : m_birds)
-	{
 
-		bird->tick(dt);
+	m_birds.tick(dt);
+
+	for (auto& n_pipes : m_pipe)
+	{
+		n_pipes->tick(dt);
 	}
+
 }
 
 void Game::render()
 {
-	for (auto& bird : m_birds)
+	m_birds.render();
+	for (auto& n_pipes : m_pipe)
 	{
-		bird->render();
+		n_pipes->render();
 	}
 }
 

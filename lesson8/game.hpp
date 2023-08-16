@@ -1,5 +1,6 @@
 #pragma once
 
+#include "pipe.hpp"
 #include "bird.hpp"
 #include <SFML/Graphics.hpp>
 
@@ -30,5 +31,6 @@ private:
 
 private:
 	sf::RenderWindow m_window;
-	Bird* m_birds[5];
+	Bird m_birds;
+	Pipe* m_pipe[3];
 };
