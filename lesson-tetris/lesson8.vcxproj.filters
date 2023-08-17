@@ -21,12 +21,48 @@
     <ClCompile Include="game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="tetromino.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iShapeTetromino.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zShapeTetromino.hpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zShapeTetromino.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tShapeTetromino.hpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tShapeTetromino.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cubeShapeTetromino.hpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cubeShapeTetromino.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lShapeTetromino.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="settings.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tetromino.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iShapeTetromino.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lShapeTetromino.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

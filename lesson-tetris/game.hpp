@@ -1,5 +1,14 @@
 #pragma once
 
+#include "settings.hpp"
+
+#include "tetromino.hpp"
+#include "iShapeTetromino.hpp"
+#include "zShapeTetromino.hpp"
+#include "tShapeTetromino.hpp"
+#include "lShapeTetromino.hpp"
+#include "cubeShapeTetromino.hpp"
+
 #include <SFML/Graphics.hpp>
 
 // Singleton
@@ -33,4 +42,6 @@ private:
 private:
 	bool isGameOver = false;
 	sf::RenderWindow m_window;
+
+	LShapeTetromino zTet;
 };
