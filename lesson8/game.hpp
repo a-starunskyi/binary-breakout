@@ -1,6 +1,7 @@
 #pragma once
 
 #include "bird.hpp"
+#include "pipeManager.hpp"
 #include <SFML/Graphics.hpp>
 
 // Singleton
@@ -17,7 +18,7 @@ public:
 
 	void run();
 	void exit();
-	void draw(const sf::Shape& shape);
+	void draw(const sf::Drawable& shape);
 
 private:
 	Game();
@@ -28,7 +29,14 @@ private:
 	void render();
 	void handleEvent(const sf::Event& event);
 
+	void restartGame();
+	void gameOver();
+
 private:
+	bool isGameOver = false;
+
+	Bird m_bird;
+	PipeManager m_pipeManager;
+
 	sf::RenderWindow m_window;
-	Bird* m_birds[5];
 };

@@ -1,28 +1,14 @@
 #include "game.hpp"
 #include "settings.hpp"
-//#include "bird.hpp"
-
 
 
 Game::Game()
 	: m_window({ setting::WINDOW_WIDTH, setting::WINDOW_HEIGHT }, "Flappy Bird")
-	, m_birds{nullptr}
 {
-	float birdY = 0.f;
-	for (auto& pBird : m_birds)
-	{
-		pBird = new Bird(birdY);
-		birdY += 20.f;
-	}
 }
 
 Game::~Game()
 {
-	for (auto& pBird : m_birds)
-	{
-		delete pBird;
-		pBird = nullptr;
-	}
 }
 
 void Game::run()
@@ -50,26 +36,36 @@ void Game::exit()
 	m_window.close();
 }
 
-void Game::draw(const sf::Shape& shape)
+void Game::draw(const sf::Drawable& shape)
 {
 	m_window.draw(shape);
 }
 
 void Game::tick(float dt)
 {
-	for (auto& bird : m_birds)
+	if (isGameOver)
 	{
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
+		{
+			restartGame();
+		}
 
-		bird->tick(dt);
+		return;
+	}
+
+	m_bird.tick(dt);
+	m_pipeManager.tick(dt);
+
+	if (m_bird.isOutOfScreen() || m_pipeManager.checkCollision(m_bird))
+	{
+		gameOver();
 	}
 }
 
 void Game::render()
 {
-	for (auto& bird : m_birds)
-	{
-		bird->render();
-	}
+	m_bird.render();
+	m_pipeManager.render();
 }
 
 void Game::handleEvent(const sf::Event& event)
@@ -80,4 +76,20 @@ void Game::handleEvent(const sf::Event& event)
 		exit();
 		break;
 	}
+}
+
+void Game::restartGame()
+{
+	m_bird.restart();
+	isGameOver = false;
+}
+
+void Game::gameOver()
+{
+	if (isGameOver)
+	{
+		return;
+	}
+
+	isGameOver = true;
 }

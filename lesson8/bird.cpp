@@ -46,3 +46,22 @@ void Bird::render()
 
 	Game::getInstance().draw(bird);
 }
+
+void Bird::restart()
+{
+	m_y = setting::WINDOW_HEIGHT / 2.f;
+	m_speed = 0.f;
+}
+
+bool Bird::isOutOfScreen() const
+{
+	return m_y < 0.f || m_y > setting::WINDOW_HEIGHT;
+}
+
+sf::FloatRect Bird::getBound() const
+{
+	sf::CircleShape bird(setting::BIRD_RADIUS);
+	bird.setPosition(m_x, m_y);
+
+	return bird.getGlobalBounds();
+}
