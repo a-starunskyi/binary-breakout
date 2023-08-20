@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Tetromino.hpp"
 #include <SFML/Graphics.hpp>
 
 // Singleton
@@ -13,7 +13,6 @@ public:
 	}
 
 	~Game();
-
 	void run();
 	void exit();
 	void draw(const sf::Drawable& shape);
@@ -23,12 +22,16 @@ private:
 	Game(const Game& otherGame);
 	Game& operator=(const Game& otherGame);
 
+	sf::Color tetrominoFillColor; 
+	sf::Vector2f tetrominoPosition;
+	std::vector<Tetromino*> m_tetrominoes; //supposed to be	a vector holding all of the tetrominoes instances
 	void tick(float dt);
 	void render();
 	void handleEvent(const sf::Event& event);
 
 	void restartGame();
 	void gameOver();
+
 
 private:
 	bool isGameOver = false;
