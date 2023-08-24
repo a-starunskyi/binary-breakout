@@ -19,7 +19,11 @@ Game::Game()
 
 Game::~Game()
 {
-	
+	for (auto& p_pipe : m_pipe)
+	{
+		delete p_pipe;
+		p_pipe = nullptr;
+	}
 }
 
 void Game::run()

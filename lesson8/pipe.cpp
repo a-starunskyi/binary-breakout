@@ -20,8 +20,8 @@ Pipe::Pipe()
 	pipePosY = setting::WINDOW_HEIGHT;
 }
 
-Pipe::Pipe(int posX)
-	:pipeSpace(posX)
+Pipe::Pipe(int pipeSpc)
+	:pipeSpace(pipeSpc)
 
 {
 	gap = rand() % (300 - 100);
