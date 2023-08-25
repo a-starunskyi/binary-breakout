@@ -159,7 +159,18 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bird.cpp" />
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="pipe.cpp" />
+    <ClCompile Include="pipeManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bird.hpp" />
+    <ClInclude Include="game.hpp" />
+    <ClInclude Include="pipe.hpp" />
+    <ClInclude Include="pipeManager.hpp" />
+    <ClInclude Include="settings.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
