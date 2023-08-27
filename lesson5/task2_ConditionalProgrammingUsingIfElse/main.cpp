@@ -1,14 +1,25 @@
+// Conditional Programming Using if … else:
 // Problem: Write a program that takes a number from the user and determines whether it's even or odd.
 
-#include<iostream>
-using namespace std;
+#include <iostream>
+using std::cout;
+using std::endl;
+using std::cin;
 
-int main() {
-	int num;
+int main()
+{
+    cout << "Enter a number" << endl;
+    int num = 0;
+    cin >> num;
 
-	// TODO: Take input from the user
+    if (num % 2 == 0)
+    {
+        cout << " This number is even" << endl;
+    }
+    else
+    {
+        cout << " This number is odd" << endl;
+    }
 
-	// TODO: Implement the if ... else logic to determine and display if it's even or odd
-
-	return 0;
+    return 0;
 }
