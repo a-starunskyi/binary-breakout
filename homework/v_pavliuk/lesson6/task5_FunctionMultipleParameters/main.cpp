@@ -6,29 +6,27 @@
 
 using namespace std;
 
-double quadraticFormula(double a, double b, double c) {
+void quadraticFormula(double a, double b, double c) {
     double discriminant = b * b - 4 * a * c;
 
     if (discriminant < 0) {
-        cout << "No real roots." << endl;
-        return 0.0;
+        cout << "No real roots" << std::endl;
     }
+    else {
+        double root1 = (-b + sqrt(discriminant)) / (2 * a);
+        double root2 = (-b - sqrt(discriminant)) / (2 * a);
 
-    double sqrtDiscriminant = sqrt(discriminant);
-    double root1 = (-b + sqrtDiscriminant) / (2 * a);
-    double root2 = (-b - sqrtDiscriminant) / (2 * a);
-
-    return root1; // You can also return root2 or both roots depending on your needs
+        cout << "Root 1: " << root1 << endl;
+        cout << "Root 2: " << root2 << endl;
+    }
 }
 
 int main() {
     double a, b, c;
-    cout << "Enter coefficients (a, b, c): ";
+    cout << "Enter the values of a, b, and c: ";
     cin >> a >> b >> c;
 
-    double result = quadraticFormula(a, b, c);
-
-    cout << "Root: " << result << endl;
+    quadraticFormula(a, b, c);
 
     return 0;
 }
