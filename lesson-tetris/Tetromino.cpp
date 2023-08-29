@@ -37,10 +37,10 @@ void Tetromino::setShape(const int shape[4][4]) {
 IShapeTetromino::IShapeTetromino(sf::Vector2f position, sf::Color color)
 	: Tetromino(position, color) {
 	int shape[4][4] = {
-		{0,0,0,0},
-		{1,1,1,1},
-		{0,0,0,0},
-		{0,0,0,0}
+		{1,0,0,0},
+		{1,0,0,0},
+		{1,0,0,0},
+		{1,0,0,0}
 	};
 
 	setShape(shape);
@@ -87,6 +87,30 @@ CubeShapeTetromino::CubeShapeTetromino(sf::Vector2f position, sf::Color color)
 		{1,1,0,0},
 		{1,1,0,0},
 		{0,0,0,0},
+		{0,0,0,0}
+	};
+
+	setShape(shape);
+}
+
+SShapeTetromino::SShapeTetromino(sf::Vector2f position, sf::Color color)
+	: Tetromino(position, color) {
+	int shape[4][4] = {
+		{0,1,1,0},
+		{1,1,0,0},
+		{0,0,0,0},
+		{0,0,0,0}
+	};
+
+	setShape(shape);
+}
+
+JShapeTetromino::JShapeTetromino(sf::Vector2f position, sf::Color color)
+	: Tetromino(position, color) {
+	int shape[4][4] = {
+		{0,1,0,0},
+		{0,1,0,0},
+		{1,1,0,0},
 		{0,0,0,0}
 	};
 

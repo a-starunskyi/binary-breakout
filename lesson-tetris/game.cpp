@@ -3,15 +3,10 @@
 
 
 Game::Game()
-	: m_window({ setting::WINDOW_WIDTH, setting::WINDOW_HEIGHT }, "Tetris")
+	: m_window({ setting::WINDOW_WIDTH, setting::WINDOW_HEIGHT }, "Tetris"),
+	m_board(), 
+	m_tetrominoController(m_board) 
 {
-	// Creating tetromino instances and adding them to the vector
-	m_tetrominoes.push_back(new IShapeTetromino(sf::Vector2f(100.0f, 100.0f), sf::Color::Red));
-	m_tetrominoes.push_back(new LShapeTetromino(sf::Vector2f(200.0f, 200.0f), sf::Color::Yellow));
-	m_tetrominoes.push_back(new TShapeTetromino(sf::Vector2f(300.0f, 300.0f), sf::Color::Blue));
-	m_tetrominoes.push_back(new ZShapeTetromino(sf::Vector2f(400.0f, 400.0f), sf::Color::Green));
-	m_tetrominoes.push_back(new CubeShapeTetromino(sf::Vector2f(500.0f, 500.0f), sf::Color::Magenta));
-	
 }
 
 Game::~Game()

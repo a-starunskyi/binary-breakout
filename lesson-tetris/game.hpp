@@ -1,7 +1,10 @@
 #pragma once
 #include "Tetromino.hpp"
+#include "Board.hpp"
+#include "TetrominoController.hpp"
 #include <SFML/Graphics.hpp>
-
+class Board;
+class TetrominoController;
 // Singleton
 class Game
 {
@@ -25,6 +28,8 @@ private:
 	sf::Color tetrominoFillColor; 
 	sf::Vector2f tetrominoPosition;
 	std::vector<Tetromino*> m_tetrominoes; //supposed to be	a vector holding all of the tetrominoes instances
+	TetrominoController m_tetrominoController;
+
 	void tick(float dt);
 	void render();
 	void handleEvent(const sf::Event& event);
