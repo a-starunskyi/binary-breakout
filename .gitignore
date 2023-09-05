@@ -13,3 +13,7 @@
 *.obj
 *.pdb
 *.user
+
+# Ignore build directories
+Debug/
+Release/
